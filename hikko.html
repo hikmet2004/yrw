@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HikkoAI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        main {
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на HikkoAI</h1>
+    </header>
+    <main>
+        <ul>
+            {% for post in posts %}
+                <li>{{ post.title }}: {{ post.content }}</li>
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+</html>
